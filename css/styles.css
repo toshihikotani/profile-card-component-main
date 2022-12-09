@@ -1,0 +1,47 @@
+@import url('typography.css');
+
+:root {
+    /* PRIMARY COLORS */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* NEUTRAL COLOR */
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+/* COMMON */
+html, body {
+    min-width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: var(--dark-cyan);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PORTRAIT TABLET */
+@media only screen and (min-width:600px){
+
+}
+
+/* LANDSCAPE TABLET */
+@media only screen and (min-width:768px){
+    
+}
+
+/* LAPTOP / DESKTOPS */
+@media only screen and (min-width:992px){
+    
+}
+
+/* LARGE LAPTOP / DESKTOPS */
+@media only screen and (min-width:1200px){
+    
+}
