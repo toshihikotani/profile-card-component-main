@@ -124,6 +124,7 @@ hr {
     width: 100%;
     background-color:var(--dark-gray);
     border: 0.005em solid var(--dark-gray);
+    opacity: 0.3;
     margin: 12px 0px;
 }
 
@@ -165,6 +166,27 @@ hr {
 
 /* LAPTOP / DESKTOPS */
 @media only screen and (min-width:992px){
+
+    /* PATTERNS */
+    #pattern-content > #top-pattern {
+        bottom: 30%;
+        right: 52%;
+    }
+    
+    #pattern-content > #bottom-pattern {
+        top: 55%;
+        left: 47%;
+    }
+
+    /* CONTEXT BOX */
+    #content-box {
+        width: 350px;
+    }
+
+    /* USER */
+    #user {
+        margin: 55px auto 0px;
+    }
     
 }
 
