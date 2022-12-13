@@ -35,20 +35,27 @@ main {
 }
 
 /* PATTERNS */
-#top-pattern, 
-#bottom-pattern {
+#pattern-content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
     position: absolute;
     z-index: -1;
 }
 
-#top-pattern {
-    bottom: 50%;
-    right: 35%;
+#pattern-content > #top-pattern, 
+#pattern-content > #bottom-pattern {
+    position: absolute;
 }
 
-#bottom-pattern {
+#pattern-content > #top-pattern {
+    bottom: 50%;
+    right: 40%;
+}
+
+#pattern-content > #bottom-pattern {
     top: 35%;
-    left: 45%;
+    left: 44%;
 }
 
 /* CONTEXT BOX */
@@ -57,14 +64,16 @@ main {
     height: 375px;
     margin: 0 auto;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* PATTERN BACKGROUND */
 #content-box > #pattern-background {
     position: relative;
     border-radius: inherit;
-    height: 140px;
+    height: 145px;
 }
 
 #content-box > #pattern-background > #pattern-card {
@@ -85,8 +94,8 @@ main {
 /* USER */
 #user {
     width: 100%;
-
-    margin: 60px auto 0px;
+    height: 230px;
+    margin: 65px auto 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -96,6 +105,7 @@ main {
 #profile-details > #name {
     font-family: 'KumbhSans-Bold';
     color: var(--very-dark-desaturated-blue);
+    margin-bottom: 12px;
 }
 
 #profile-details > #name > span,
@@ -106,17 +116,33 @@ main {
 
 #profile-details > #country {
     font-size: 0.75em;
+    margin-top: 12px ;
+}
+
+/* HORIZONTAL LINE */
+hr {
+    width: 100%;
+    background-color:var(--dark-gray);
+    border: 0.005em solid var(--dark-gray);
+    margin: 12px 0px;
 }
 
 /* STATUS DETAILS */
 #status-details {
+    width: 85%;
+    margin: 15px auto 0px;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+}
+
+#status-details > .status {
+    flex-basis: 33.33%;
 }
 
 #status-details > .status  > .status-data {
     font-family: 'KumbhSans-Bold';
     color: var(--very-dark-desaturated-blue);
+    margin: 0px;
 }
 
 #status-details > .status  > .status-name{
